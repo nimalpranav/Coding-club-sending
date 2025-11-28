@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f1f1f1;
+        }
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        input, button {
+            width: 90%;
+            padding: 8px;
+            margin: 10px 0;
+            border-radius: 6px;
+            border: 1px solid #666;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #3f8f45;
+        }
+        .link-btn {
+            border: none;
+            background: #2196F3;
+            color: white;
+            width: 90%;
+            padding: 8px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .link-btn:hover {
+            background: #1c86d1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Login</h2>
+    <form method="POST">
+        <input name="username" placeholder="Username"><br>
+        <input name="password" placeholder="Password" type="password"><br>
+        <button type="submit">Login</button>
+    </form>
+
+    <a href="/register"><button class="link-btn">Register</button></a>
+</div>
+
+</body>
+</html>
